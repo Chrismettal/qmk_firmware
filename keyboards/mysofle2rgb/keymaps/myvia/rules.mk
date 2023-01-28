@@ -7,3 +7,5 @@ VIA_ENABLE = yes
 LTO_ENABLE = yes
 RGBLIGHT_ENABLE = yes
 MOUSEKEY_ENABLE = yes
+
+CONVERT_TO=promicro_rp2040
