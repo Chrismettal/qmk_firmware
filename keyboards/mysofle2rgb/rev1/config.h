@@ -1,5 +1,9 @@
 #pragma once
 
+/* Work-around for slave half sometimes losing connection with master half:
+   https://github.com/qmk/qmk_firmware/issues/19420#issuecomment-1372134274 */
+#define usb_lld_disconnect_bus(usbp) do {} while(0)
+
 /* key matrix size */
 // Rows are doubled-up
 #define MATRIX_ROWS 10
